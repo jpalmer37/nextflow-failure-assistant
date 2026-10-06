@@ -1,0 +1,23 @@
+Sep-23 11:40:52.799 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'breakme'
+
+Caused by:
+  Process `breakme` terminated with an error exit status (127)
+
+
+Command executed:
+
+  definitely_not_a_real_tool --input in.fq > result.txt
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 2: definitely_not_a_real_tool: command not found
+
+Work dir:
+  <path>/955357fddf2f31e0d79ba54bbe933b
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`

@@ -1,0 +1,162 @@
+Jul-08 01:10:23.081 [Actor Thread 16] ERROR nextflow.processor.TaskProcessor - Error executing process > 'ref_mapping:map_reads (5)'
+
+Caused by:
+  Failed to create Conda environment
+    command: mamba env create --prefix <path>/env-e615bd51d3d90fac-45cd9945f12b1c519e25374fe20b361b --file <path>/fluscan.yml
+    status : 1
+    message:
+      Channels:
+       - conda-forge
+       - bioconda
+       - defaults
+      Platform: osx-64
+      Collecting package metadata (repodata.json): ...working... done
+      Solving environment: ...working... failed
+      
+      PackagesNotFoundError: The following packages are not available from current channels:
+      
+        - spades=3.15.3*
+      
+      Current channels:
+      
+        - https://conda.anaconda.org/conda-forge/osx-64
+        - https://conda.anaconda.org/bioconda/osx-64
+        - https://repo.anaconda.com/pkgs/main/osx-64
+        - https://repo.anaconda.com/pkgs/r/osx-64
+      
+      To search for alternate channels that may provide the conda package you're
+      looking for, navigate to
+      
+          https://anaconda.org
+      
+      and use the search bar at the top of the page.
+
+
+java.lang.IllegalStateException: java.lang.IllegalStateException: Failed to create Conda environment
+  command: mamba env create --prefix <path>/env-e615bd51d3d90fac-45cd9945f12b1c519e25374fe20b361b --file <path>/fluscan.yml
+  status : 1
+  message:
+    Channels:
+     - conda-forge
+     - bioconda
+     - defaults
+    Platform: osx-64
+    Collecting package metadata (repodata.json): ...working... done
+    Solving environment: ...working... failed
+    
+    PackagesNotFoundError: The following packages are not available from current channels:
+    
+      - spades=3.15.3*
+    
+    Current channels:
+    
+      - https://conda.anaconda.org/conda-forge/osx-64
+      - https://conda.anaconda.org/bioconda/osx-64
+      - https://repo.anaconda.com/pkgs/main/osx-64
+      - https://repo.anaconda.com/pkgs/r/osx-64
+    
+    To search for alternate channels that may provide the conda package you're
+    looking for, navigate to
+    
+        https://anaconda.org
+    
+    and use the search bar at the top of the page.
+
+	at nextflow.conda.CondaCache.getCachePathFor(CondaCache.groovy:396)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.processor.TaskRun.getCondaEnv0(TaskRun.groovy:647)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnCurrentN(ScriptBytecodeAdapter.java:96)
+	at nextflow.processor.TaskRun.this$dist$invoke$1(TaskRun.groovy)
+	at nextflow.processor.TaskRun$2.methodMissing(TaskRun.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaClassImpl.invokeMissingMethod(MetaClassImpl.java:924)
+	at groovy.lang.MetaClassImpl.invokePropertyOrMissing(MetaClassImpl.java:1413)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1335)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.processor.TaskRun$2.apply(TaskRun.groovy:638)
+	at nextflow.processor.TaskRun$2.apply(TaskRun.groovy)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1710)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.processor.TaskRun.getCondaEnv(TaskRun.groovy:635)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.processor.TaskProcessor.createTaskHashKey(TaskProcessor.groovy:2226)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.processor.TaskProcessor.invokeTask(TaskProcessor.groovy:654)
+	at nextflow.processor.InvokeTaskAdapter.call(InvokeTaskAdapter.groovy:52)
+	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.startTask(DataflowOperatorActor.java:120)
+	at groovyx.gpars.dataflow.operator.ForkingDataflowOperatorActor.access$001(ForkingDataflowOperatorActor.java:35)
+	at groovyx.gpars.dataflow.operator.ForkingDataflowOperatorActor$1.run(ForkingDataflowOperatorActor.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.IllegalStateException: Failed to create Conda environment
+  command: mamba env create --prefix <path>/env-e615bd51d3d90fac-45cd9945f12b1c519e25374fe20b361b --file <path>/fluscan.yml
+  status : 1
+  message:
+    Channels:
+     - conda-forge
+     - bioconda
+     - defaults
+    Platform: osx-64
+    Collecting package metadata (repodata.json): ...working... done
+    Solving environment: ...working... failed
+    
+    PackagesNotFoundError: The following packages are not available from current channels:
+    
+      - spades=3.15.3*
+    
+    Current channels:
+    
+      - https://conda.anaconda.org/conda-forge/osx-64
+      - https://conda.anaconda.org/bioconda/osx-64
+      - https://repo.anaconda.com/pkgs/main/osx-64
+      - https://repo.anaconda.com/pkgs/r/osx-64
+    
+    To search for alternate channels that may provide the conda package you're
+    looking for, navigate to
+    
+        https://anaconda.org
+    
+    and use the search bar at the top of the page.
+
+	at nextflow.conda.CondaCache.runCommand(CondaCache.groovy:344)
+	at nextflow.conda.CondaCache.createLocalCondaEnv0(CondaCache.groovy:315)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:645)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:82)
+	at nextflow.conda.CondaCache$_createLocalCondaEnv_closure1.doCall(CondaCache.groovy:267)
+	at nextflow.conda.CondaCache$_createLocalCondaEnv_closure1.call(CondaCache.groovy)
+	at nextflow.file.FileMutex.lock(FileMutex.groovy:106)
+	at nextflow.conda.CondaCache.createLocalCondaEnv(CondaCache.groovy:267)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1333)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1088)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:645)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:82)
+	at nextflow.conda.CondaCache$_getLazyImagePath_closure3.doCall(CondaCache.groovy:373)
+	at nextflow.conda.CondaCache$_getLazyImagePath_closure3.call(CondaCache.groovy)
+	at groovyx.gpars.dataflow.LazyDataflowVariable$1.run(LazyDataflowVariable.java:70)
+	... 3 common frames omitted
+Jul-08 01:10:23.152 [Actor Thread 16] DEBUG nextflow.Session - Session aborted -- Cause: java.lang.IllegalStateException: Failed to create Conda environment

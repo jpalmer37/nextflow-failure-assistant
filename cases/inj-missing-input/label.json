@@ -1,0 +1,7 @@
+{
+  "id": "inj-missing-input",
+  "origin": "injected",
+  "split": "test",
+  "cause_category": "missing_input",
+  "resolving_check_id": "missing_input.0"
+}

@@ -1,0 +1,26 @@
+Sep-23 11:41:06.940 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'breakme'
+
+Caused by:
+  Process `breakme` terminated with an error exit status (1)
+
+
+Command executed:
+
+  printf 'sampleID,fastq_1
+  s1,a.fq.gz
+  ' > samplesheet.csv
+      python3 -c "import csv,sys; r=csv.DictReader(open('samplesheet.csv')); h=r.fieldnames; sys.exit('ERROR: Missing required column: sample. Found header: %s' % h)" > result.txt
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  ERROR: Missing required column: sample. Found header: ['sampleID', 'fastq_1']
+
+Work dir:
+  <path>/3f68912b8014caafd4485ca02a4100
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`

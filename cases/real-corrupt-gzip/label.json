@@ -1,0 +1,8 @@
+{
+  "id": "real-corrupt-gzip",
+  "origin": "real",
+  "split": "test",
+  "cause_category": "corrupt_input",
+  "resolving_check_id": "corrupt_input.0",
+  "note": "fastp/igzip rejected the R1 FASTQ; five samples shared one cause."
+}

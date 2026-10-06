@@ -1,0 +1,20 @@
+Sep-23 11:40:57.552 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'breakme'
+
+Caused by:
+  Missing output file(s) `result.txt` expected by process `breakme`
+
+
+Command executed:
+
+  echo 'work happened' > actual_name.txt
+
+Command exit status:
+  0
+
+Command output:
+  (empty)
+
+Work dir:
+  <path>/68b00f096d5ee6eddded92f0c313bb
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`

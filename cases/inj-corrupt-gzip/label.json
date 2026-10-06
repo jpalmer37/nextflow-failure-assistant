@@ -1,0 +1,7 @@
+{
+  "id": "inj-corrupt-gzip",
+  "origin": "injected",
+  "split": "test",
+  "cause_category": "corrupt_input",
+  "resolving_check_id": "corrupt_input.0"
+}

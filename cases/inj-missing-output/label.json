@@ -1,0 +1,7 @@
+{
+  "id": "inj-missing-output",
+  "origin": "injected",
+  "split": "dev",
+  "cause_category": "missing_output",
+  "resolving_check_id": "missing_output.0"
+}

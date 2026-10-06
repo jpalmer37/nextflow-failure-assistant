@@ -1,0 +1,24 @@
+Sep-23 11:41:11.489 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'breakme'
+
+Caused by:
+  Process `breakme` terminated with an error exit status (1)
+
+
+Command executed:
+
+  printf 'this is not gzip at all' > reads.fq.gz
+  gunzip -c reads.fq.gz > result.txt
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  gunzip: reads.fq.gz: not in gzip format
+
+Work dir:
+  <path>/3fac0c31183baa0e7d56bf611e14cd
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line

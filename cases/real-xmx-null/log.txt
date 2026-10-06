@@ -1,0 +1,37 @@
+Aug-18 14:06:57.871 [TaskFinalizer-8] ERROR nextflow.processor.TaskProcessor - Error executing process > 'downsample_bbnorm (SRR33993032 / 5m / 30x)'
+
+Caused by:
+  Process `downsample_bbnorm (SRR33993032 / 5m / 30x)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  printf -- "- process_name: downsample_bbnorm\n"             >> SRR33993032_30x_downsample_provenance.yml
+  printf -- "  tools:\n"                               >> SRR33993032_30x_downsample_provenance.yml
+  printf -- "    - tool_name: bbnorm\n"                >> SRR33993032_30x_downsample_provenance.yml
+  printf -- "      tool_version: $(bbnorm.sh --version 2>&1 | head -n 2 | tail -n 1 | cut -d ' ' -f 3)\n" >> SRR33993032_30x_downsample_provenance.yml
+  printf -- "      parameters:\n"                      >> SRR33993032_30x_downsample_provenance.yml
+  printf -- "        - parameter: --coverage\n"        >> SRR33993032_30x_downsample_provenance.yml
+  printf -- "          value: 30\n"           >> SRR33993032_30x_downsample_provenance.yml
+  
+  bbnorm.sh         -Xmxnullg         in1=SRR33993032_R1.fq.gz         in2=SRR33993032_R2.fq.gz         out1=SRR33993032-downsample-bbnorm-30x_R1.fastq         out2=SRR33993032-downsample-bbnorm-30x_R2.fastq         target=30 	
+  
+  gzip SRR33993032-downsample-bbnorm-30x_R1.fastq
+  gzip SRR33993032-downsample-bbnorm-30x_R2.fastq
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  java -ea -Xmxnullg -Xmsnullg -cp <path>/ jgi.KmerNormalize bits=32 -Xmxnullg in1=SRR33993032_R1.fq.gz in2=SRR33993032_R2.fq.gz out1=SRR33993032-downsample-bbnorm-30x_R1.fastq out2=SRR33993032-downsample-bbnorm-30x_R2.fastq target=30
+  Invalid maximum heap size: -Xmxnullg
+  Error: Could not create the Java Virtual Machine.
+  Error: A fatal exception has occurred. Program will exit.
+
+Work dir:
+  <path>/c4ac40433ba6a019e83176f28f0e5a
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`

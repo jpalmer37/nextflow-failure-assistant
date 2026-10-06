@@ -1,0 +1,7 @@
+{
+  "id": "inj-out-of-memory",
+  "origin": "injected",
+  "split": "dev",
+  "cause_category": "out_of_memory",
+  "resolving_check_id": "out_of_memory.0"
+}

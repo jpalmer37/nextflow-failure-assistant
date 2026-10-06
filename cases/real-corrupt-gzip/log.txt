@@ -1,0 +1,28 @@
+Jul-08 01:01:30.498 [TaskFinalizer-6] ERROR nextflow.processor.TaskProcessor - Error executing process > 'fastp (SRR33993035)'
+
+Caused by:
+  Process `fastp (SRR33993035)` terminated with an error exit status (255)
+
+
+Command executed:
+
+  printf -- "- process_name: fastp\n"  >> SRR33993035_fastp_provenance.yml
+  printf -- "  tools:\n"               >> SRR33993035_fastp_provenance.yml
+  printf -- "    - tool_name: fastp\n" >> SRR33993035_fastp_provenance.yml
+  printf -- "      tool_version: $(fastp --version 2>&1 | cut -d ' ' -f 2)\n" >> SRR33993035_fastp_provenance.yml
+  
+  fastp       -t 1       -i SRR33993035_R1.fq.gz       -I SRR33993035_R2.fq.gz       -o SRR33993035_R1.trim.fastq.gz       -O SRR33993035_R2.trim.fastq.gz       -j SRR33993035.fastp.json       -h SRR33993035.fastp.html       --detect_adapter_for_pe       --cut_tail       --report_title "SRR33993035 fastp report"
+
+Command exit status:
+  255
+
+Command output:
+  (empty)
+
+Command error:
+  ERROR: igzip: Error invalid gzip header found: SRR33993035_R1.fq.gz
+
+Work dir:
+  <path>/4e7b6b3ff385b8f26dc94137b9e14d
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line

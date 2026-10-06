@@ -1,0 +1,24 @@
+Sep-23 11:41:02.283 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'breakme'
+
+Caused by:
+  Process `breakme` terminated with an error exit status (143)
+
+
+Command executed:
+
+  kill -TERM $$
+  echo done > result.txt
+
+Command exit status:
+  143
+
+Command output:
+  (empty)
+
+Command error:
+  .command.run: line 98:  1788 Terminated: 15          <path>/bash -ue .command.sh
+
+Work dir:
+  <path>/aa504d86ad6bf6aa34ae7f2c9712b0
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`

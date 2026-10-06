@@ -1,0 +1,7 @@
+{
+  "id": "inj-timeout",
+  "origin": "injected",
+  "split": "dev",
+  "cause_category": "timeout",
+  "resolving_check_id": "timeout.0"
+}

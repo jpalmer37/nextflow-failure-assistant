@@ -1,0 +1,7 @@
+{
+  "id": "inj-silent-exit255",
+  "origin": "injected",
+  "split": "test",
+  "cause_category": "insufficient_evidence",
+  "resolving_check_id": "insufficient_evidence.0"
+}

@@ -1,0 +1,20 @@
+Sep-23 11:41:13.929 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'breakme'
+
+Caused by:
+  Process `breakme` terminated with an error exit status (1)
+
+
+Command executed:
+
+  java -Xmxnullg -version 2> result.txt
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Work dir:
+  <path>/0a1cccab6852c014fa751b618fe915
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`

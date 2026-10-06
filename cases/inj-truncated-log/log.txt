@@ -1,0 +1,7 @@
+Sep-23 11:41:58.902 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'breakme'
+
+Caused by:
+  Process `breakme` terminated with an error exit status (1)
+
+
+Command executed:
