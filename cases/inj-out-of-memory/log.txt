@@ -1,0 +1,27 @@
+Sep-23 11:43:18.980 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'breakme'
+
+Caused by:
+  Process `breakme` terminated with an error exit status (1)
+
+
+Command executed:
+
+  printf '%s
+  ' 'public class Oom {' '  public static void main(String[] a) {' '    java.util.List<byte[]> held = new java.util.ArrayList<>();' '    while (true) held.add(new byte[1048576]);' '  }' '}' > Oom.java
+      javac Oom.java
+      java -Xmx32m Oom > result.txt
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+  	at Oom.main(Oom.java:4)
+
+Work dir:
+  <path>/e8195c99113c6c4cf52c353b337913
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`

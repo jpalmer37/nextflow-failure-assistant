@@ -1,0 +1,7 @@
+{
+  "id": "inj-conda-solve",
+  "origin": "injected",
+  "split": "test",
+  "cause_category": "conda_solve_failed",
+  "resolving_check_id": "conda_solve_failed.0"
+}

@@ -1,0 +1,20 @@
+Sep-23 11:41:54.301 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'breakme'
+
+Caused by:
+  Process `breakme` terminated with an error exit status (255)
+
+
+Command executed:
+
+  exit 255
+
+Command exit status:
+  255
+
+Command output:
+  (empty)
+
+Work dir:
+  <path>/76ff4548546a3e5300ff3e14d3c952
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line

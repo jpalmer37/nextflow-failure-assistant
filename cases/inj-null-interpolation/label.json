@@ -1,0 +1,7 @@
+{
+  "id": "inj-null-interpolation",
+  "origin": "injected",
+  "split": "test",
+  "cause_category": "bad_interpolation",
+  "resolving_check_id": "bad_interpolation.0"
+}

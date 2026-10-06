@@ -1,0 +1,35 @@
+Aug-18 14:34:21.837 [TaskFinalizer-5] ERROR nextflow.processor.TaskProcessor - Error executing process > 'downsample_rasusa (SRR33993037 / 30 / <path>/SRR33993037_R2.trim.fastq.gzx)'
+
+Caused by:
+  Process `downsample_rasusa (SRR33993037 / 30 / <path>/SRR33993037_R2.trim.fastq.gzx)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  printf -- "- process_name: downsample_rasusa\n"             >> SRR33993037_<path>/SRR33993037_R2.trim.fastq.gzx_downsample_provenance.yml
+  printf -- "  tools:\n"                               >> SRR33993037_<path>/SRR33993037_R2.trim.fastq.gzx_downsample_provenance.yml
+  printf -- "    - tool_name: rasusa\n"                >> SRR33993037_<path>/SRR33993037_R2.trim.fastq.gzx_downsample_provenance.yml
+  printf -- "      tool_version: $(rasusa --version 2>&1 | cut -d ' ' -f 2)\n" >> SRR33993037_<path>/SRR33993037_R2.trim.fastq.gzx_downsample_provenance.yml
+  printf -- "      parameters:\n"                      >> SRR33993037_<path>/SRR33993037_R2.trim.fastq.gzx_downsample_provenance.yml
+  printf -- "        - parameter: --coverage\n"        >> SRR33993037_<path>/SRR33993037_R2.trim.fastq.gzx_downsample_provenance.yml
+  printf -- "          value: <path>/SRR33993037_R2.trim.fastq.gz\n"           >> SRR33993037_<path>/SRR33993037_R2.trim.fastq.gzx_downsample_provenance.yml
+  printf -- "        - parameter: --genome-size\n"     >> SRR33993037_<path>/SRR33993037_R2.trim.fastq.gzx_downsample_provenance.yml
+  printf -- "          value: 30\n"        >> SRR33993037_<path>/SRR33993037_R2.trim.fastq.gzx_downsample_provenance.yml
+  printf -- "        - parameter: --seed\n"            >> SRR33993037_<path>/SRR33993037_R2.trim.fastq.gzx_downsample_provenance.yml
+  printf -- "          value: 0\n" >> SRR33993037_<path>/SRR33993037_R2.trim.fastq.gzx_downsample_provenance.yml
+  
+  rasusa reads         --seed 0         --coverage <path>/SRR33993037_R2.trim.fastq.gz         --genome-size 30         SRR33993037_R1.trim.fastq.gz         null         -o SRR33993037-downsample-rasusa-<path>/SRR33993037_R2.trim.fastq.gzx_R1.fastq.gz         -o SRR33993037-downsample-rasusa-<path>/SRR33993037_R2.trim.fastq.gzx_R2.fastq.gz
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 2: SRR33993037_<path>/SRR33993037_R2.trim.fastq.gzx_downsample_provenance.yml: No such file or directory
+
+Work dir:
+  <path>/0d93b7dac219e330a9cb1f1c2b5687
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`

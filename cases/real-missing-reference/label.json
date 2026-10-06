@@ -1,0 +1,8 @@
+{
+  "id": "real-missing-reference",
+  "origin": "real",
+  "split": "test",
+  "cause_category": "missing_input",
+  "resolving_check_id": "missing_input.0",
+  "note": "augur align could not read the reference FASTA."
+}

@@ -1,0 +1,25 @@
+Jul-14 17:25:16.472 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'align (Aligning Sequences)'
+
+Caused by:
+  Process `align (Aligning Sequences)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  augur align 	--sequences noro_test_seqs.fasta 	--reference-sequence norovirus-g1-reference.fasta 	--output alignment.fasta 	--fill-gaps 	--nthreads 1
+
+Command exit status:
+  1
+
+Command output:
+  ERROR: Cannot read reference sequence.
+  	make sure the file "norovirus-g1-reference.fasta" exists
+
+Command error:
+  ERROR: Cannot read reference sequence.
+  	make sure the file "norovirus-g1-reference.fasta" exists
+
+Work dir:
+  <path>/5722914370d946911379ce17dd3661
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line

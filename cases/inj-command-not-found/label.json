@@ -1,0 +1,7 @@
+{
+  "id": "inj-command-not-found",
+  "origin": "injected",
+  "split": "dev",
+  "cause_category": "command_not_found",
+  "resolving_check_id": "command_not_found.0"
+}

@@ -1,0 +1,25 @@
+Sep-23 11:41:00.010 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'breakme'
+
+Caused by:
+  Process `breakme` terminated with an error exit status (1)
+
+
+Command executed:
+
+  echo secret > locked.txt
+  chmod 000 locked.txt
+  cat locked.txt > result.txt
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  cat: locked.txt: Permission denied
+
+Work dir:
+  <path>/1f24263a613c5d05e5e6c6d419fcda
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`

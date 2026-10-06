@@ -1,0 +1,8 @@
+{
+  "id": "real-gzx-filename",
+  "origin": "real",
+  "split": "test",
+  "cause_category": "bad_interpolation",
+  "resolving_check_id": "bad_interpolation.0",
+  "note": "A stray x produced *.fastq.gzx. Surfaces as 'No such file', so the error text points at the wrong cause."
+}

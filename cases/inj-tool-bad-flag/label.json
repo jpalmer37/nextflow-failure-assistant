@@ -1,0 +1,7 @@
+{
+  "id": "inj-tool-bad-flag",
+  "origin": "injected",
+  "split": "dev",
+  "cause_category": "tool_error",
+  "resolving_check_id": "tool_error.0"
+}

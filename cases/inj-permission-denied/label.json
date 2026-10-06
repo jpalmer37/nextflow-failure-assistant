@@ -1,0 +1,7 @@
+{
+  "id": "inj-permission-denied",
+  "origin": "injected",
+  "split": "dev",
+  "cause_category": "permission_denied",
+  "resolving_check_id": "permission_denied.0"
+}

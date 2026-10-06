@@ -1,0 +1,23 @@
+Sep-23 11:41:09.310 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'breakme'
+
+Caused by:
+  Process `breakme` terminated with an error exit status (1)
+
+
+Command executed:
+
+  cat reference_genome.fasta > result.txt
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  cat: reference_genome.fasta: No such file or directory
+
+Work dir:
+  <path>/107ba132e2fe7144d071809366e16e
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`

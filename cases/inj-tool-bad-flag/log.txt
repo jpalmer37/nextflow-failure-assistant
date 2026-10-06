@@ -1,0 +1,24 @@
+Sep-23 11:40:55.123 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'breakme'
+
+Caused by:
+  Process `breakme` terminated with an error exit status (2)
+
+
+Command executed:
+
+  sort --definitely-not-a-flag <path>/hosts > result.txt
+
+Command exit status:
+  2
+
+Command output:
+  (empty)
+
+Command error:
+  sort: unrecognized option `--definitely-not-a-flag'
+  Usage: sort [-bcCdfigMmnrsuz] [-kPOS1[,POS2] ... ] [+POS1 [-POS2]] [-S memsize] [-T tmpdir] [-t separator] [-o outfile] [--batch-size size] [--files0-from file] [--heapsort] [--mergesort] [--radixsort] [--qsort] [--mmap] [--parallel thread_no] [--human-numeric-sort] [--version-sort] [--random-sort [--random-source file]] [--compress-program program] [file ...]
+
+Work dir:
+  <path>/6a379adbc4b45d4842d83f050f71b1
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`

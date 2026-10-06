@@ -1,0 +1,8 @@
+{
+  "id": "real-conda-solve",
+  "origin": "real",
+  "split": "test",
+  "cause_category": "conda_solve_failed",
+  "resolving_check_id": "conda_solve_failed.0",
+  "note": "spades=3.15.3* absent for osx-64; env creation aborted before the task ran."
+}

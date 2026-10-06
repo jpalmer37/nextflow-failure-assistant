@@ -1,0 +1,7 @@
+{
+  "id": "inj-malformed-samplesheet",
+  "origin": "injected",
+  "split": "dev",
+  "cause_category": "malformed_samplesheet",
+  "resolving_check_id": "malformed_samplesheet.0"
+}
